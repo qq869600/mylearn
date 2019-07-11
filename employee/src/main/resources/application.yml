@@ -1,0 +1,15 @@
+server:
+  port: 8000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: springcloud-employee01
+spring:
+  application:
+    name: springcloud-employee
+feign:
+  hystrix:
+    enabled: true #支持付服务降级

@@ -1,0 +1,12 @@
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10000/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: springcloud-dept01
+spring:
+  application:
+    name: springcloud-dept
