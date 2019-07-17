@@ -1,2 +1,18 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev #开发环境
+  application:
+    name: config-dev
 server:
-  port: 10000
+  port: 7777
+
+---
+spring:
+  profiles: test #测试环境
+  application:
+    name: config-test
+server:
+  port: 8888
